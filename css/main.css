@@ -109,7 +109,7 @@ header{
 
 /* Featured */
 
-section.featured{
+.featured{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/capa.jpg');
    
@@ -122,22 +122,23 @@ section.featured{
     align-items: flex-start;
 }
 
-.title 
-.subtitle 
-.text-featured{
+.container{
     margin-left: 30px;
     margin-bottom: 10px;
+    width: 55%;
     
 }
 
 .title{
     color: var(--vermelho);
-    font-size: 70px;
+    font-size: 70px;   
 }
 
 .subtitle{
     color: white;
-    font-size: 20px;    
+    font-size: 20px; 
+    margin-top: 0; 
+    margin-bottom: 20px;  
 }
 
 .text-featured{
