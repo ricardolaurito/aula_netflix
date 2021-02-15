@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--scripts externos-->
-    <script src="https://kit.fontawesome.com/7231d88eac.js" crossorigin="anonymous"></script>
-    
-    
+    <!--links internos-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
     <title>Netflix Clone</title>
 </head>
 <body>
@@ -48,17 +50,90 @@
         </div><!--center-->
     </header>    
     <div class="featured">
+        <main>
         <div class="container">
         <div class="title">
-            <h2>VIKINGS</h2>            
+            <img src="img/Vikings.png" alt="">           
         </div><!--title-->
         <div class="subtitle">
             <h3>Assista a 6 temporada completa</h3>
         </div><!--subtitle-->
         <div class="text-featured">
             <p>Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
+        </div>
+        <div class="botoes">
+            <a href="#serie-vikings" class="open-vikings"></a>
+            <button role="button" class="botao-1">
+            <i class="fas fa-play"></i>
+                Assitir
+             </button>
+            </a><!--link-->
+             <button role="button" class="botao-2">
+                <i class="fas fa-plus"></i>
+                     Minha lista
+             </button>
+            <button role="button" class="botao-3">
+            <i class="fas fa-info-circle"></i>
+                 Mais informações
+         </button>
         </div><!--container-->
         </div><!--text-featured-->
     </div><!--featured-->
-</body>
+</main>
+<div class="title2">
+    <h2 class="categoria">Em alta</h2>
+</div><!--title2-->
+    <div class="carousel">        
+       <div class="owl-carousel owl-theme">
+            <div class="item">
+               <img class="box-filme" src="img/min1.jpg" alt=""> 
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min2.jpg" alt=""> 
+             </div>
+             <div class="item">
+                <img class="box-filme" src="img/min3.jpg" alt=""> 
+             </div>
+             <div class="item">
+                <img class="box-filme" src="img/min4.jpg" alt=""> 
+             </div>
+             <div class="item">
+                <img class="box-filme" src="img/min5.jpg" alt=""> 
+             </div>
+             <div class="item">
+                <img class="box-filme" src="img/min6.jpg" alt=""> 
+             </div>            
+    </div><!--carousel-->
+    <div class="title2">
+        <h2 class="categoria">Continuar assistindo</h2>
+    </div><!--title2-->
+        <div class="carousel">        
+           <div class="owl-carousel owl-theme">
+                <div class="item">
+                   <img class="box-filme" src="img/min7.jpg" alt=""> 
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/min8.jpg" alt=""> 
+                 </div>
+                 <div class="item">
+                    <img class="box-filme" src="img/min9.jpg" alt=""> 
+                 </div>
+                 <div class="item">
+                    <img class="box-filme" src="img/min10.jpg" alt=""> 
+                 </div>
+                 <div class="item">
+                    <img class="box-filme" src="img/min11.jpg" alt=""> 
+                 </div>
+                 <div class="item">
+                    <img class="box-filme" src="img/min12.jpg" alt=""> 
+                 </div>            
+        </div><!--carousel-->
+
+     <!--scripts externos-->
+     <script src="https://kit.fontawesome.com/7231d88eac.js" crossorigin="anonymous"></script>
+     <script src="js/owl/jquery.min.js"></script>
+     <script src="js/owl/owl.carousel.min.js"></script>
+     <script src="js/owl/setup.js"></script>
+
+   </body>
 </html>

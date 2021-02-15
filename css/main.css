@@ -1,6 +1,7 @@
 :root{
     --vermelho: #E50914;
     --preto: #141414;
+    --branco: #FFFFFF;
 }
 
 *{
@@ -11,7 +12,7 @@
 }
 
 body{
-    background: gray;
+    background: var(--preto);
 }
 
 .center{
@@ -23,7 +24,7 @@ body{
 .clear{clear: both;}
 
 header{
-    background: black;
+    background: rgba(0, 0, 0, .1);
     padding: 12px 0;
 }
 
@@ -111,7 +112,7 @@ header{
 
 .featured{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/capa.jpg');
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.7)100%), url('/img/capa.jpg');
    
     height: 700px;
     background-size:cover;
@@ -129,11 +130,6 @@ header{
     
 }
 
-.title{
-    color: var(--vermelho);
-    font-size: 70px;   
-}
-
 .subtitle{
     color: white;
     font-size: 20px; 
@@ -145,4 +141,84 @@ header{
     color: white;
     position: relative;
    
+}
+
+/* Buttons Featured*/
+
+.botao-1{
+    color: black;
+    border: none;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+
+.botao-2{
+    background-color: rgba(100, 100, 100, .5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;    
+}
+
+.botao-3{
+    background-color: rgba(100, 100, 100, .5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;    
+}
+
+.botao-1:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+
+}
+
+.botao-2:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao-3:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botoes i{
+    margin-right: 5px;    
+}
+
+.botoes{
+    margin-top: 20px;
+}
+
+/* Carousel */
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.categoria{
+    color: var(--branco);
+    margin-bottom: 3px;   
 }
