@@ -222,3 +222,50 @@ header{
     color: var(--branco);
     margin-bottom: 3px;   
 }
+
+/* window modal*/
+
+.video1-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar .video1-box{
+    animation: .3s;
+}
+
+.fechar{
+    position: absolute;
+    right: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.video1-box.mostrar{
+    display: flex;
+}
+
+@keyframes video1-box{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
